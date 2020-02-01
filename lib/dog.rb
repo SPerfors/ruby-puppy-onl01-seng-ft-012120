@@ -1,3 +1,5 @@
+binding 'pry'
+
 class Dog 
   attr_accessor :name, :puppy  
   @@all = []
@@ -13,7 +15,7 @@ class Dog
   end
   
   def self.print_all
-    self.all.each{|self| puts "#{name}"}
+    self.all.each{puts "#{name}"}
   end
   
   def self.clear_all
