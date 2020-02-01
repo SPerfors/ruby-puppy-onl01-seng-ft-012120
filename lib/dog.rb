@@ -13,7 +13,7 @@ class Dog
   end
   
   def self.print_all
-    self.all.each{puts "#{name}"}
+    self.all.each{|self| puts "#{name}"}
   end
   
   def self.clear_all
