@@ -6,7 +6,6 @@ class Dog
   
   def initialize(name)
     @name = name 
-    #@puppy = puppy
     @@all << self  
   end
   
@@ -16,7 +15,6 @@ class Dog
   
   def self.print_all
     self.all.each{|dog| puts "#{name}"}
-    #binding.pry
   end
   
   def self.clear_all
