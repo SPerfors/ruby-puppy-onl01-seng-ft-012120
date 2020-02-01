@@ -1,4 +1,4 @@
-binding 'pry'
+require 'pry'
 
 class Dog 
   attr_accessor :name, :puppy  
@@ -16,6 +16,7 @@ class Dog
   
   def self.print_all
     self.all.each{puts "#{name}"}
+    binding.pry
   end
   
   def self.clear_all
