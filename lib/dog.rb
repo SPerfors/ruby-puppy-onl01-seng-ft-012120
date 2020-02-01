@@ -1,9 +1,10 @@
 class Dog 
-  attr_accessor :name 
+  attr_accessor :name, :puppy  
   @@all = []
   
   def initialize(name)
     @name = name 
+    @puppy = puppy
     @@all << self  
   end
   
