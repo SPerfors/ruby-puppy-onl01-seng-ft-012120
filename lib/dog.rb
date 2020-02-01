@@ -9,6 +9,10 @@ class Dog
     #@@all << self  
   end
   
+  def save
+    @@all << self 
+  end
+  
   def self.all
     @@all 
   end
@@ -21,7 +25,5 @@ class Dog
     self.all.clear 
   end 
   
-  def self.save
-    @@all << self 
-  end
+  
 end
